@@ -21,4 +21,24 @@ public class RMIService extends UnicastRemoteObject implements RMIInterface {
         System.out.println("MyServerImpl.getDescription: " + text + " " + i);
         return "getDescription: " + text + " " + i;
     }
+    
+    @Override
+    public float Add(float x, float y) throws RemoteException {
+        return x+y;
+    }
+    
+    @Override
+    public float Sub(float x, float y) throws RemoteException {
+        return x-y;
+    }
+    
+    @Override
+    public float Mult(float x, float y) throws RemoteException {
+        return x*y;
+    }
+    
+    @Override
+    public float Div(float x, float y) throws RemoteException {
+        return x/y;
+    }
 }

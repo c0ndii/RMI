@@ -15,6 +15,10 @@ public class RMIClient {
             String result = myRemoteObject.getDescription(text);
             System.out.println("Wysłano do servera: " + text);
             System.out.println("Otrzymana z serwera odpowiedź: " + result);
+            System.out.println("Dodawanie 5 + 6 ="+myRemoteObject.Add(5, 6));
+            System.out.println("Odejmowanie 10 - 4 ="+myRemoteObject.Sub(10, 4));
+            System.out.println("Mnożenie 5 * 6 ="+myRemoteObject.Mult(5, 6));
+            System.out.println("Dzielenie 100 / 10 ="+myRemoteObject.Div(100, 10));
         } catch (Exception e) {
             e.printStackTrace();
         }

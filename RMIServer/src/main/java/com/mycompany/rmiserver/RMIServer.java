@@ -18,11 +18,12 @@ public class RMIServer {
             }
             //System.setProperty("java.rmi.server.codebase","file:/C:/Users/Jacek/workspace/RMIServer / bin /");
             System.setProperty("java.rmi.server.codebase", "file:/C:/Users/student/Documents/NetBeansProjects/RMIServer/target/classes/");
+            System.setProperty("java.rmi.server.hostname", "10.20.16.2");
             //System.setProperty("java.rmi.server.codebase", "http://192.168.1.102/jaco/");
             System.out.println("Codebase: " + System.getProperty("java.rmi.server.codebase"));
             LocateRegistry.createRegistry(1099);
             RMIService obj1 = new RMIService();
-            Naming.rebind("//localhost/ABC", obj1);
+            Naming.rebind("//10.20.16.2/ABC", obj1);
             System.out.println("Serwer oczekuje ...");
         } catch (RemoteException | MalformedURLException e) {
             e.printStackTrace();
