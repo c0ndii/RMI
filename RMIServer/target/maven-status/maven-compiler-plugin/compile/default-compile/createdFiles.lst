@@ -1,0 +1,3 @@
+com\mycompany\rmiserver\RMIInterface.class
+com\mycompany\rmiserver\RMIServer.class
+com\mycompany\rmiserver\RMIService.class
