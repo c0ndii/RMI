@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 
 public class app{
 	
-	public static void main(String[] args) {
+	public static void Main(String[] args) {
 		
 		InetAddress ip;
 		try {
